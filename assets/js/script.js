@@ -93,7 +93,7 @@ $(".list-group").on("click", "span", function() {
   $(this).replaceWith(dateInput);
 
   dateInput.trigger("focus");
-)};
+});
 
 $(".list-group").on("blur", "input[type='text']", function() {
 var date = $(this)
@@ -118,6 +118,7 @@ var taskSpan = $("<span>")
 
 $(this).replaceWith(taskSpan);
 });
+
 
 // modal was triggered
 $("#task-form-modal").on("show.bs.modal", function() {
